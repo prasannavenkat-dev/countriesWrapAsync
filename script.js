@@ -94,13 +94,7 @@ async function restCountries() {
         lat = responseNew[j].latlng[0];
         lng = responseNew[j].latlng[1];
 
-        weatherAPI =
-          "http://api.openweathermap.org/data/2.5/weather?" +
-          "lat=" +
-          lat +
-          "&lon=" +
-          lng +
-          "&appid=08477fc38c4f73768cb61ee086cfd835&units=metric";
+        weatherAPI ="http://api.openweathermap.org/data/2.5/weather?" +"lat=" +lat +"&lon=" +lng +"&appid=08477fc38c4f73768cb61ee086cfd835&units=metric";
         result1 = await fetch(weatherAPI);
         result2 = await result1.json();
         console.log(result2);
