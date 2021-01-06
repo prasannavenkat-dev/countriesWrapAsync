@@ -100,7 +100,7 @@ async function restCountries() {
         console.log(result2);
 
         alert(
-          "Country : " +
+          "Location : " +
             result2.name +
             ",\n" +
             "Weather : " +
