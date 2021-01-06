@@ -99,17 +99,7 @@ async function restCountries() {
         result2 = await result1.json();
         console.log(result2);
 
-        alert(
-          "Location : " +
-            result2.name +
-            ",\n" +
-            "Weather : " +
-            result2.weather[0].description +
-            ",\n" +
-            "Temprature : " +
-            result2.main.feels_like +
-            " Celsius" +
-            ",\n" +
+        alert("Location : " +result2.name +",\n" +"Weather : " +result2.weather[0].description +",\n" +"Temprature : " +result2.main.feels_like +" Celsius" +",\n" +
             "Humidity : " +
             result2.main.humidity +
             "%" +
