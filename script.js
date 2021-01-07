@@ -87,12 +87,20 @@ async function restCountries() {
 
     document.getElementById(weatherID).addEventListener("click", function (e) {
       var j = e.target.id.slice(7);
-      j = +j;
-      weather(j);
-
-      async function weather(j) {
-        lat = responseNew[j].latlng[0];
+     
+      lat = responseNew[j].latlng[0];
         lng = responseNew[j].latlng[1];
+      weatheri(lat,lng);
+
+     
+    });
+  }
+}
+
+restCountries();
+
+ async function weatheri(lat,lng) {
+        
 
         weatherAPI ="https://api.openweathermap.org/data/2.5/weather?" +"lat=" +lat +"&lon=" +lng +"&appid=08477fc38c4f73768cb61ee086cfd835&units=metric";
         result1 = await fetch(weatherAPI);
@@ -113,8 +121,6 @@ async function restCountries() {
             "m/s"
         );
       }
-    });
-  }
-}
 
-restCountries();
+
+
