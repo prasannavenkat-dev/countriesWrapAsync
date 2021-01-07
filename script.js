@@ -78,7 +78,7 @@ async function restCountries() {
     weather[i] = document.createElement("li");
     weather[i].setAttribute("class", "list-group-item  ");
     weatherBtn[i] = document.createElement("button");
-    weatherBtn[i].setAttribute("class", "btn weather");
+    weatherBtn[i].setAttribute("class", "btn btn-outline-light weather");
     weatherID = "weather" + i;
     weatherBtn[i].setAttribute("id", weatherID);
     weatherBtn[i].innerHTML = "Click For Weather";
