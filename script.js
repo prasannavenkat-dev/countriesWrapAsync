@@ -97,7 +97,7 @@ async function restCountries() {
         weatherAPI ="https://api.openweathermap.org/data/2.5/weather?" +"lat=" +lat +"&lon=" +lng +"&appid=08477fc38c4f73768cb61ee086cfd835&units=metric";
         result1 = await fetch(weatherAPI);
         result2 = await result1.json();
-        console.log(result2);
+       
 
         alert("Location : " +result2.name +",\n" +"Weather : " +result2.weather[0].description +",\n" +"Temprature : " +result2.main.feels_like +" Celsius" +",\n" +
             "Humidity : " +
